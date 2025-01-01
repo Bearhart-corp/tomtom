@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first challenge !</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" />
+  </head>
+  <body>
+    <style>
+      :root {
+        --p: #323232;
+      }
+      p {
+        font-size: 16px;
+        color: #323232;
+      }
+      h2 {
+        font-size: 30px;
+        margin: 0px;
+      }
+      body {
+        font-family: monospace;
+        margin: 0;
+      }
+      .container {
+        height: 1200px;
+        background-color: #f3ebe4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section {
+        margin: 10%;
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        max-width: 600px;
+        max-height: 450px;
+        box-shadow: 1px 0px 5px #3f8068;
+      }
+
+      .left img {
+        border-radius: 20px 0px 0px 20px;
+        width: 300px;
+      }
+      .right {
+        max-height: 450px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        box-sizing: border-box;
+        justify-content: center;
+      }
+
+      .price {
+        display: flex;
+        color: #3f8068;
+        gap: 10px;
+        font-weight: bold;
+        font-size: xx-large;
+        margin-bottom: 10px;
+        justify-content: flex-start;
+      }
+      .price s {
+        color: var(--p);
+        font-size: 15px;
+      }
+      .price span {
+        display: flex;
+        align-items: center;
+      }
+
+      button {
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background-color: #3f8068;
+        color: #fff;
+        border: none;
+      }
+      .a {
+        color: #fff;
+        text-decoration: none;
+        padding-left: 6px;
+        font-size: 15px;
+      }
+      @media screen and (max-width: 350px) {
+        .section {
+          flex-direction: column;
+          align-items: stretch;
+          box-sizing: border-box;
+          max-height: fit-content;
+        }
+        .right {
+          max-height: fit-content;
+        }
+        .left img {
+          border-radius: 20px 20px 0px 0px;
+          min-width: -webkit-fill-available;
+        }
+      }
+    </style>
+    <div class="container">
+      <div class="section">
+        <div class="left">
+          <img src="image-product-desktop.jpg" />
+        </div>
+        <div class="right">
+          <p>PERFUME</p>
+          <h2>Gabrielle Essence Eau De Parfum</h2>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price">
+            <span class="price_a">$149.99</span>
+            <span class="price_b"><s>$169.99</s></span>
+          </div>
+          <button>
+            <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z"
+                fill="#FFF"
+              />
+            </svg>
+            <a href="#" class="a">Add to Cart</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
